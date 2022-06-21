@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listFilesFromDocumentsFolder()
+        imgView.image = nil
     }
 
 
@@ -52,8 +54,22 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func sUpAction(_ sender: Any) {
+        let url = URL(fileURLWithPath: currentImgPath)
+        let tUrl = "/Users/xuanyuan/Desktop/all/sUp/\(currentName)"
+        try? FileManager.default.moveItem(atPath: url.path, toPath: tUrl)
+        nextImage()
+    }
+    
+    
+    @IBAction func sDownAction(_ sender: Any) {
+        let url = URL(fileURLWithPath: currentImgPath)
+        let tUrl = "/Users/xuanyuan/Desktop/all/sDown/\(currentName)"
+        try? FileManager.default.moveItem(atPath: url.path, toPath: tUrl)
+        nextImage()
+    }
+    
     @IBAction func showAction(_ sender: Any) {
-        listFilesFromDocumentsFolder()
         nextImage()
     }
     
@@ -64,6 +80,7 @@ class ViewController: UIViewController {
             return
         }
         imgs = []
+        names = []
         for item in its {
             //            print("Found \(item)")
             let full = "\(path)/\(item)"
@@ -71,6 +88,8 @@ class ViewController: UIViewController {
             names.append(item)
         }
         total = names.count
+        remain = names.count-currentIndex-1
+        label.text = "\(remain)/\(total)"
 //        debugPrint(imgs)
     }
     
@@ -78,10 +97,10 @@ class ViewController: UIViewController {
         currentIndex += 1
         currentImgPath = imgs[currentIndex]
         currentName = names[currentIndex]
-        let img = UIImage(contentsOfFile: currentImgPath)
-        imgView.image = img
         remain = names.count-currentIndex-1
         label.text = "\(remain)/\(total)"
+        let img = UIImage(contentsOfFile: currentImgPath)
+        imgView.image = img
     }
 }
 
