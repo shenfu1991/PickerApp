@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6B36040124453FC5291454 /* Pods_PickerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C28562170BC05A3D5344560 /* Pods_PickerApp.framework */; };
+		D2703AEF287093D700DF40E1 /* x_Bot.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2703AEE287093D700DF40E1 /* x_Bot.mlmodel */; };
+		D2703AF12870994200DF40E1 /* NetwokingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2703AF02870994200DF40E1 /* NetwokingManager.swift */; };
+		D2703AF32873247D00DF40E1 /* AI.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2703AF22873247D00DF40E1 /* AI.plist */; };
+		D2703AF52873256200DF40E1 /* xb_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2703AF42873256200DF40E1 /* xb_4.mlmodel */; };
 		D27D3E862861E98D002CC9F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D3E852861E98D002CC9F3 /* AppDelegate.swift */; };
 		D27D3E882861E98D002CC9F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D3E872861E98D002CC9F3 /* SceneDelegate.swift */; };
 		D27D3E8A2861E98D002CC9F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27D3E892861E98D002CC9F3 /* ViewController.swift */; };
@@ -16,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C28562170BC05A3D5344560 /* Pods_PickerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87F164AE9B8D90F3411D732 /* Pods-PickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerApp.debug.xcconfig"; path = "Target Support Files/Pods-PickerApp/Pods-PickerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D2703AEE287093D700DF40E1 /* x_Bot.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = x_Bot.mlmodel; sourceTree = "<group>"; };
+		D2703AF02870994200DF40E1 /* NetwokingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetwokingManager.swift; sourceTree = "<group>"; };
+		D2703AF22873247D00DF40E1 /* AI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AI.plist; sourceTree = "<group>"; };
+		D2703AF42873256200DF40E1 /* xb_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = xb_4.mlmodel; sourceTree = "<group>"; };
 		D27D3E822861E98D002CC9F3 /* PickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27D3E852861E98D002CC9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D27D3E872861E98D002CC9F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		D27D3E8E2861E98F002CC9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27D3E912861E98F002CC9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D27D3E932861E98F002CC9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F8E5A7CD342F2C38FB11D6 /* Pods-PickerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerApp.release.xcconfig"; path = "Target Support Files/Pods-PickerApp/Pods-PickerApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6B36040124453FC5291454 /* Pods_PickerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD710E17E17FA22BDF4F06FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C28562170BC05A3D5344560 /* Pods_PickerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE84DEAB7D9BC3EC28903927 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87F164AE9B8D90F3411D732 /* Pods-PickerApp.debug.xcconfig */,
+				F9F8E5A7CD342F2C38FB11D6 /* Pods-PickerApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D27D3E792861E98C002CC9F3 = {
 			isa = PBXGroup;
 			children = (
 				D27D3E842861E98D002CC9F3 /* PickerApp */,
 				D27D3E832861E98D002CC9F3 /* Products */,
+				CE84DEAB7D9BC3EC28903927 /* Pods */,
+				BD710E17E17FA22BDF4F06FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +91,12 @@
 				D27D3E852861E98D002CC9F3 /* AppDelegate.swift */,
 				D27D3E872861E98D002CC9F3 /* SceneDelegate.swift */,
 				D27D3E892861E98D002CC9F3 /* ViewController.swift */,
+				D2703AF02870994200DF40E1 /* NetwokingManager.swift */,
+				D2703AF22873247D00DF40E1 /* AI.plist */,
 				D27D3E8B2861E98D002CC9F3 /* Main.storyboard */,
+				D2703AEE287093D700DF40E1 /* x_Bot.mlmodel */,
 				D27D3E8E2861E98F002CC9F3 /* Assets.xcassets */,
+				D2703AF42873256200DF40E1 /* xb_4.mlmodel */,
 				D27D3E902861E98F002CC9F3 /* LaunchScreen.storyboard */,
 				D27D3E932861E98F002CC9F3 /* Info.plist */,
 			);
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D27D3E962861E98F002CC9F3 /* Build configuration list for PBXNativeTarget "PickerApp" */;
 			buildPhases = (
+				C13ADDD54198F0AB6651F486 /* [CP] Check Pods Manifest.lock */,
 				D27D3E7E2861E98D002CC9F3 /* Sources */,
 				D27D3E7F2861E98D002CC9F3 /* Frameworks */,
 				D27D3E802861E98D002CC9F3 /* Resources */,
+				241735691AEDBC7023E72E4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2703AF32873247D00DF40E1 /* AI.plist in Resources */,
 				D27D3E922861E98F002CC9F3 /* LaunchScreen.storyboard in Resources */,
 				D27D3E8F2861E98F002CC9F3 /* Assets.xcassets in Resources */,
 				D27D3E8D2861E98D002CC9F3 /* Main.storyboard in Resources */,
@@ -133,14 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		241735691AEDBC7023E72E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickerApp/Pods-PickerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PickerApp/Pods-PickerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PickerApp/Pods-PickerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C13ADDD54198F0AB6651F486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D27D3E7E2861E98D002CC9F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D27D3E8A2861E98D002CC9F3 /* ViewController.swift in Sources */,
+				D2703AF12870994200DF40E1 /* NetwokingManager.swift in Sources */,
+				D2703AEF287093D700DF40E1 /* x_Bot.mlmodel in Sources */,
 				D27D3E862861E98D002CC9F3 /* AppDelegate.swift in Sources */,
 				D27D3E882861E98D002CC9F3 /* SceneDelegate.swift in Sources */,
+				D2703AF52873256200DF40E1 /* xb_4.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +368,13 @@
 		};
 		D27D3E972861E98F002CC9F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87F164AE9B8D90F3411D732 /* Pods-PickerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A76SUCL6AV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PickerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,11 +397,13 @@
 		};
 		D27D3E982861E98F002CC9F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F8E5A7CD342F2C38FB11D6 /* Pods-PickerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A76SUCL6AV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PickerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
