@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imgView: UIImageView!
     
-    let path = "/Users/xuanyuan/Desktop/AI"
+    let path = "/Users/xuanyuan/Desktop/101010-AI"
     var imgs: [String] = []
     var names: [String] = []
     var currentImgPath = ""
@@ -141,7 +141,8 @@ class ViewController: UIViewController {
 //                goReg()
 //            }
 //        }
-        getClass()
+//        getClass()
+        moveFiles()
     }
     
     func goReg() {
@@ -252,6 +253,30 @@ class ViewController: UIViewController {
         } failure: { error in
             
         }
+    }
+    
+    func moveFiles() {
+        let mmm = try? High15()
+        
+        for (idx,url) in imgs.enumerated() {
+            
+                let img = UIImage(contentsOfFile: url)
+                let result =  try? mmm!.prediction(input: High15Input(imgWith: (img?.cgImage)!))
+                let res = result?.classLabel ?? ""
+                var rate: Double = 0
+                if let info = result?.Identity {
+                    rate = info[res] ?? 0
+                }
+                if rate >= 0.99 {
+                    let name = names[idx]
+                    let tUrl = "/Users/xuanyuan/Desktop/all/\(res)/\(name)"
+                    try? FileManager.default.moveItem(atPath: url, toPath: tUrl)
+                }
+                //            debugPrint("\(res): \(rate)")
+                label.text = "\(idx+1)/\(total)"
+        }
+        
+      
     }
     
 }

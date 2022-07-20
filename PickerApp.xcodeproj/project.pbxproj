@@ -18,6 +18,9 @@
 		D27D3E8D2861E98D002CC9F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27D3E8B2861E98D002CC9F3 /* Main.storyboard */; };
 		D27D3E8F2861E98F002CC9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27D3E8E2861E98F002CC9F3 /* Assets.xcassets */; };
 		D27D3E922861E98F002CC9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27D3E902861E98F002CC9F3 /* LaunchScreen.storyboard */; };
+		D2E8E0942880358200CB5D10 /* XB_model1010.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2E8E0932880358200CB5D10 /* XB_model1010.mlmodel */; };
+		D2E8E09628817B5100CB5D10 /* mm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2E8E09528817B5100CB5D10 /* mm.mlmodel */; };
+		D2E8E09C2881D26C00CB5D10 /* High15.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2E8E09B2881D26C00CB5D10 /* High15.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		D27D3E8E2861E98F002CC9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27D3E912861E98F002CC9F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D27D3E932861E98F002CC9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E8E0932880358200CB5D10 /* XB_model1010.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = XB_model1010.mlmodel; sourceTree = "<group>"; };
+		D2E8E09528817B5100CB5D10 /* mm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mm.mlmodel; sourceTree = "<group>"; };
+		D2E8E09B2881D26C00CB5D10 /* High15.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = High15.mlmodel; sourceTree = "<group>"; };
 		F9F8E5A7CD342F2C38FB11D6 /* Pods-PickerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerApp.release.xcconfig"; path = "Target Support Files/Pods-PickerApp/Pods-PickerApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +102,10 @@
 				D27D3E8B2861E98D002CC9F3 /* Main.storyboard */,
 				D2703AEE287093D700DF40E1 /* x_Bot.mlmodel */,
 				D27D3E8E2861E98F002CC9F3 /* Assets.xcassets */,
+				D2E8E09528817B5100CB5D10 /* mm.mlmodel */,
+				D2E8E09B2881D26C00CB5D10 /* High15.mlmodel */,
 				D2703AF42873256200DF40E1 /* xb_4.mlmodel */,
+				D2E8E0932880358200CB5D10 /* XB_model1010.mlmodel */,
 				D27D3E902861E98F002CC9F3 /* LaunchScreen.storyboard */,
 				D27D3E932861E98F002CC9F3 /* Info.plist */,
 			);
@@ -221,8 +230,11 @@
 			files = (
 				D27D3E8A2861E98D002CC9F3 /* ViewController.swift in Sources */,
 				D2703AF12870994200DF40E1 /* NetwokingManager.swift in Sources */,
+				D2E8E0942880358200CB5D10 /* XB_model1010.mlmodel in Sources */,
 				D2703AEF287093D700DF40E1 /* x_Bot.mlmodel in Sources */,
+				D2E8E09628817B5100CB5D10 /* mm.mlmodel in Sources */,
 				D27D3E862861E98D002CC9F3 /* AppDelegate.swift in Sources */,
+				D2E8E09C2881D26C00CB5D10 /* High15.mlmodel in Sources */,
 				D27D3E882861E98D002CC9F3 /* SceneDelegate.swift in Sources */,
 				D2703AF52873256200DF40E1 /* xb_4.mlmodel in Sources */,
 			);
